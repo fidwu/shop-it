@@ -1,0 +1,171 @@
+.App {
+  padding: 20px;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #b8f2e6;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, #b2f7ef 0%, #caf0f8 100%);
+  background: url("img/bg8.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.heading, .form-check {
+  text-align: center;
+}
+
+Button {
+  border: none;
+  background-color: transparent;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+/* Category Dropdown for Items Page */
+#dropdown-item-button {
+  background-color: aliceblue !important;
+  color: black;
+}
+
+.dropdown {
+  padding-right: 10px;
+}
+
+.dropdownAdd {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-group-toggle {
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  display: block !important;
+}
+
+.btn-group > .btn-custom {
+  background-color: #40c9ff;
+  color: black;
+  flex: 0.1;
+}
+
+.btn-group > .btn-custom.active {
+  background-color: #0061ff;
+  color: white;
+}
+
+
+/* Styling to display Inventory and Shopping List Data */
+.item_display_container {
+  padding: 0;
+}
+
+.shopping_list {
+  padding-bottom: 2vh;
+}
+
+.shopping_list h6 {
+  padding: 3px 2vw;
+  background-color: lightsteelblue;
+  margin: 0;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  padding: 5px 2vw;
+  align-items: center;
+  background-color: aliceblue;
+  border: 1px solid lightslategray;
+  overflow: hidden;
+}
+
+.itemInfo {
+  padding: 0 3%;
+}
+
+.productQuantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.edit {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.edit {
+  cursor: pointer;
+  padding: 0;
+}
+
+.info {
+  flex: 1;
+  flex-grow: 1;
+  /* display: flex; */
+  display: block;
+  /* padding: 0 0.2vw; */
+}
+
+.quantity {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.dashed {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-top: 2px dashed #758efd;
+}
+
+.masonry-grid {
+  display: flex;
+  width: auto;
+}
+
+.masonry-grid-columns {
+  padding: 0 1vw;
+}
+
+@media screen and (min-width: 600px) {
+
+  .dropdownAdd {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .item {
+    padding: 5px 1vw;
+  }
+
+  .item_display_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item_display_center {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .shopping_list {
+    padding: 0;
+    padding-bottom: 2vh;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,149 @@
+.popup_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.4);;
+  z-index: 20;
+  padding: 0 10px;
+}
+
+.popup_info {
+  min-width: 85%;
+  margin: 0 auto;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.closeIcon {
+  display: flex;
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1vw;
+}
+
+.form_input {
+  margin: 0 0 5px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 1vh 5vw;
+  width: 100%;
+}
+
+.formGrid label {
+  grid-column: 1 / 2;
+}
+
+
+.itemForm .submitBtn {
+  background-color: lightcyan;
+  border-radius: 10px;
+  margin: 2.5vh 0;
+  border: 1px solid gray;
+}
+
+.row {
+  width: 100%;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* use bootstrap input styling for datepicker */
+.react-datepicker-wrapper input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.loginsignup_container {
+  background: white;
+  margin: 0 auto;
+  min-width: 85%;
+  padding: 2vh 2vw;
+}
+
+
+/* tablet and desktop form styling */
+@media screen and (min-width: 576px) {
+
+  .popup_info {
+    min-height: 35vh;
+    min-width: 55vw;
+    min-width: auto;
+  }
+
+  .row {
+    margin-bottom: 1vh;
+  }
+
+  .itemForm .col-form-label {
+    text-align: right;
+  }
+
+  .itemForm .submitBtn {
+    background-color: lightcyan;
+    margin: 1vh 0;
+  }
+
+  .formGrid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px 10px;
+    padding: 2vh 1vw;
+    width: 100%;
+  }
+
+  .formGrid label {
+    text-align: right;
+  }
+
+  .loginsignup_container {
+    min-width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 3vh 0;
+    margin-top: 20%;
+  }
+
+}
+
+/* tablet and desktop form styling */
+@media screen and (min-width: 1200px) {
+
+  .loginsignup_container {
+    margin-top: 0;
+  }
+
+}
